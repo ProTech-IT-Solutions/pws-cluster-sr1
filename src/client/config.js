@@ -34,28 +34,37 @@
 // Complete config tree: https://github.com/os-js/osjs-client/blob/master/src/config.js
 //
 
+import wallpaper from "https://cdn.glitch.com/0e60daa3-e0d5-4065-8886-d00fd778b8fc%2Fdownload.jpeg?v=1584430297954";
+
 export default {
   auth: {
     ui: {
-      title: 'Welcome to symbian',
-      stamp: 'revival version 1.0'
+      title: "Welcome to symbian",
+      stamp: "revival version 1.0"
     }
   },
   desktop: {
     settings: {
-      font: 'Roboto',
-      theme: 'StandardTheme',
-      sounds: 'FreedesktopSounds',
-      icons: 'GnomeIcons',
-      panels: [{
-        position: 'top',
-        items: [
-          {name: 'menu'},
-          {name: 'windows'},
-          {name: 'tray'},
-          {name: 'clock'}
-        ]
-      }]
+      font: "Roboto",
+      theme: "StandardTheme",
+      sounds: "FreedesktopSounds",
+      icons: "GnomeIcons",
+      panels: [
+        {
+          position: "top",
+          items: [
+            { name: "menu" },
+            { name: "windows" },
+            { name: "tray" },
+            { name: "clock" }
+          ]
+        }
+      ],
+      background: {
+        src: wallpaper,
+        color: "#000",
+        style: "cover"
+      }
     }
   }
-}
+};
