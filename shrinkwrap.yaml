@@ -1,4 +1,5 @@
 dependencies:
+  '@osjs/ace-application': 1.2.7
   '@osjs/calculator-application': 1.2.8
   '@osjs/cli': 3.0.24
   '@osjs/client': 3.1.27
@@ -16,6 +17,7 @@ dependencies:
   '@osjs/settings-application': 1.1.5
   '@osjs/standard-theme': 4.0.9
   '@osjs/textpad-application': 1.2.7
+  '@osjs/vnc-application': 0.5.4
   '@osjs/writer-application': 0.1.2
   hyperapp: 2.0.4
   typeface-roboto: 0.0.75
@@ -833,6 +835,18 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
+  /@novnc/novnc/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-W90Q79EuCYT++39aT/VKGyk7hUt2gPN3rN+ifPUvY4rdjgZlfwdCg9q7yzj04hke/zgdHsbXFfyFijBvrRuU5A==
+  /@osjs/ace-application/1.2.7:
+    dependencies:
+      '@osjs/gui': 4.0.33
+      brace: 0.11.1
+      hyperapp: 1.2.10
+    dev: false
+    resolution:
+      integrity: sha512-yViOyvJuzv92y8uqBNJAgL46z5TmoQ/Ghs8fPjL5bb7iAnroTVUoqQs9yX10Zi1wGSyL/wpqJx3ojxT7vUrA3Q==
   /@osjs/calculator-application/1.2.8:
     dependencies:
       '@osjs/gui': 4.0.32
@@ -925,6 +939,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-PxedCy7qvgpofqVTtWbvgOHBP4pFlDcqszUGreCUPwABxiEfn5DTTVkKhgg/aPEAUaDgeO4W7CWN1z9iqdFpJA==
+  /@osjs/gui/4.0.33:
+    dependencies:
+      hyperapp: 1.2.10
+      hyperapp-nestable: /hyperapp-nestable/1.1.0/hyperapp@1.2.10
+    dev: false
+    resolution:
+      integrity: sha512-7bfwXslCk6w9VO044waqdz56J7kIqie99vpATh6bkx4RiJxTHkCBjuEYTlQSp1MJAm/K3vj8R9o5DSnt7qINEA==
   /@osjs/htmlviewer-application/1.2.6:
     dependencies:
       '@osjs/gui': 4.0.32
@@ -1007,6 +1028,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7u9X7qiGZy7/Pr/fO67HAE51bdvd7vV+37Qc6yeWEOpa5KoGpji08L0MyhiU30PaiL8P2DT6nrdcSprr70Xj/w==
+  /@osjs/vnc-application/0.5.4:
+    dependencies:
+      '@novnc/novnc': 1.1.0
+      '@osjs/gui': 4.0.33
+      hyperapp: 1.2.10
+    dev: false
+    resolution:
+      integrity: sha512-6T6g+5ELVQcETagjwLWxBbA/s8qmScFUUtpX7JCzZGEgwP3XH9vvftHyfMnoIGtyxlUGmjXoDGuJCHOPEOUK6g==
   /@osjs/writer-application/0.1.2:
     dependencies:
       '@iarna/rtf-to-html': 1.1.0
@@ -1654,6 +1683,10 @@ packages:
       concat-map: 0.0.1
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+  /brace/0.11.1:
+    dev: false
+    resolution:
+      integrity: sha1-SJb8ydVE7vRfS7dmDbMg07N5/lg=
   /braces/2.3.2:
     dependencies:
       arr-flatten: 1.1.0
@@ -8852,6 +8885,7 @@ specifiers:
   '@babel/plugin-transform-runtime': ^7.8.3
   '@babel/preset-env': ^7.8.4
   '@babel/runtime': ^7.8.4
+  '@osjs/ace-application': ^1.2.7
   '@osjs/calculator-application': ^1.2.8
   '@osjs/cli': ^3.0.24
   '@osjs/client': ^3.1.26
@@ -8871,6 +8905,7 @@ specifiers:
   '@osjs/standard-theme': ^4.0.8
   '@osjs/stylelint-config': ^1.0.1
   '@osjs/textpad-application': ^1.2.7
+  '@osjs/vnc-application': ^0.5.4
   '@osjs/writer-application': ^0.1.2
   babel-loader: ^8.0.6
   copy-webpack-plugin: ^5.1.1
