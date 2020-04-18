@@ -36,9 +36,13 @@
 
 export default {
   auth: {
+    login:{
+      username: 'pws-server',
+      password: null 
+    },
     ui: {
-      title: 'Welcome to symbian',
-      stamp: 'revival version 1.0'
+      title: 'Welcome to PT-VPS 2.9',
+      stamp: 'revival version 2.0'
     }
   },
   desktop: {

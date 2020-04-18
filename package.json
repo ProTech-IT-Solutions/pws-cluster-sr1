@@ -49,6 +49,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "@osjs/ace-application": "^1.2.7",
     "@osjs/calculator-application": "^1.2.8",
     "@osjs/cli": "^3.0.24",
     "@osjs/client": "^3.1.26",
