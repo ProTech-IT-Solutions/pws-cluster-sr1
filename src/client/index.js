@@ -53,6 +53,21 @@ import {GUIServiceProvider} from '@osjs/gui';
 import {DialogServiceProvider} from '@osjs/dialogs';
 import config from './config.js';
 import './index.scss';
+import {Splash} from '@osjs/client';
+
+class CustomSplash extends Splash {
+  init() {
+    // This is the default, you can override this
+    this.$loading
+      .appendChild(document.createTextNode('Starting VPS...'));
+  }
+}
+
+// In your bootstrap add an option to a callback
+// to point to the new splash instance.
+new Core(config, {
+  splash: core => new CustomSplash(core)
+});
 
 const init = () => {
   const osjs = new Core(config, {});
