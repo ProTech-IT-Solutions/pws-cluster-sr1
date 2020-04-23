@@ -39,7 +39,6 @@
 //
 
 import {
-  Core,
   CoreServiceProvider,
   DesktopServiceProvider,
   VFSServiceProvider,
@@ -53,7 +52,7 @@ import {GUIServiceProvider} from '@osjs/gui';
 import {DialogServiceProvider} from '@osjs/dialogs';
 import config from './config.js';
 import './index.scss';
-import {Splash} from '@osjs/client';
+import {Core, Splash} from '@osjs/client';
 
 class CustomSplash extends Splash {
   init() {
