@@ -37,7 +37,7 @@
 export default {
   auth: {
     login:{
-      username: 'pws-server',
+      username: 'pws-user',
       password: null 
     },
     ui: {
